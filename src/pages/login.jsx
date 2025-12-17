@@ -11,18 +11,18 @@ function Login() {
 
     const savedUser = JSON.parse(localStorage.getItem("user"));
 
-    // 1️⃣ User exist karta hai ya nahi
+   
     if (!savedUser) {
       alert("Please register first");
       return;
     }
 
-    // 2️⃣ Email & password match check
+ 
     if (
       email === savedUser.email &&
       password === savedUser.password
     ) {
-      // 3️⃣ Login success
+      
       localStorage.setItem("isLoggedIn", "true");
       navigate("/account");
     } else {
