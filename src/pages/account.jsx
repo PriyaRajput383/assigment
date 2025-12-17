@@ -27,10 +27,7 @@ const Account = () => {
       setError("Name and Email are required");
       return;
     }
-    if (!email.includes("@")) {
-      setError("Please enter a valid email");
-      return;
-    }
+   
     const updatedUser = { ...savedUser, name, email };
     localStorage.setItem("user", JSON.stringify(updatedUser));
     setSavedUser(updatedUser);
