@@ -17,11 +17,7 @@ const Register = () => {
       return;
     }
 
-    if (!email.includes("@")) {
-      setError("Enter a valid email");
-      return;
-    }
-
+    
    
     localStorage.setItem(
       "user",
